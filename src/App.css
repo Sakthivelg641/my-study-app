@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Lato";
+  src: local("Lato"), url(./fonts/Lato-Light.ttf) format("truetype");
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cards-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  border-radius: 50px 50px 50px 50px;
+}
+.card {
+  margin: 0 0.5em;
+  justify-content: space-between;
+  display: flex;
+  box-shadow: 5px 5px 10px orange;
+  width: calc(100% / 5);
+  border-radius: 15px;
+}
+.Hnav {
+  margin-left: 65%;
+}
+.Hcontainer {
+  width: 300px;
+  height: 300px;
+  box-shadow: 5px 5px 10px orange;
+  margin-top: 20px;
+  border-radius: 15%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.Hcontainer > p {
+  padding: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Hfooter,.AFooter {
+  width: 100%;
+  height: 300px;
+  background-color: whitesmoke;
+  margin-top: 10px;
+  border-radius: 15px 15px 0 0;
 }
+.LFooter{
+    width: 100%;
+    height: 300px;
+    background-color: whitesmoke;
+    margin-top: 10px;
+    border-radius: 15px 15px 0 0;
+}
+.PHcontainer {
+  display: flex;
+  justify-content: center;
+}
+.Hloginform,
+.Hsigninform {
+  width: 600px;
+  height: 100%;
+  margin-top: 10%;
+  box-shadow: 5px 5px 10px orange;
+  border-radius: 20px;
+}
+.HloginformParent,
+.HsigninformParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.learnerWelcome,
+.AuthorWelcome {
+  width: 100%;
+  align-items: center;
+  margin: 0;
+  justify-content: center;
+  width: auto;
+  border-radius: 0%;
+}
+.authorCourseimage{
+    border-radius: 15px;
+height: 600px;
+box-shadow:  5px 5px 10px black;}
