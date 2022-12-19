@@ -1,21 +1,13 @@
 import "./App.css";
-// import SignIn from "./pages/signIn";
-// import Login from "./pages/login";
-// import LearnerHomepage from "./pages/learnerHomepage";
-// import AuthorHomepage from "./pages/authorHomepage";
-import CommonHomePage from "./pages/commonHomePage";
-
-function App() {
+import ReactDOM from "react-dom/client"
+import Routing from "./pages/routing";
+export default function App() {
   return (
-    <>
-      {/* <SignIn />
-      <AuthorHomepage />
-      <LearnerHomepage /> 
-       <Login />*/}
-
-      <CommonHomePage />
-    </>
+    
+ <div>
+  <Routing></Routing>
+ </div>
   );
 }
-
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);

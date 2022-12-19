@@ -1,11 +1,5 @@
 import React from "react";
-import { createRoot } from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-  Link,
-} from "react-router-dom";
+
 import {
   Navbar,
   Container,
@@ -15,13 +9,17 @@ import {
   Button,
 } from "react-bootstrap";
 
+import { Link,Outlet  } from "react-router-dom";
+
 function CommonHomepageNavbar() {
   return (
-    <>
+   
+      
+      <>
       <div>
         <Navbar bg="dark" expand="lg" variant="dark">
           <Container fluid>
-            <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+            <Navbar.Brand as ={Link} to="/">Navbar scroll</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
               <Form className="d-flex ms-5">
@@ -38,8 +36,8 @@ function CommonHomepageNavbar() {
                 style={{ maxHeight: "100px" }}
                 navbarScroll
               >
-                <Nav.Link to="/login">Login</Nav.Link>
-                <Nav.Link to="#action2">Sign in</Nav.Link>
+                <Nav.Link as = {Link} eventKey="/login"  to="/login">Log in</Nav.Link>
+                <Nav.Link as = {Link}  eventKey="/sign" to="/sign">Sign in</Nav.Link>
                 <NavDropdown title="About" id="navbarScrollingDropdown">
                   <NavDropdown.Item href="#action3">About</NavDropdown.Item>
                   <NavDropdown.Item href="#action4">
@@ -55,7 +53,8 @@ function CommonHomepageNavbar() {
           </Container>
         </Navbar>
       </div>
-    </>
+      <Outlet />
+      </>
   );
 }
 
