@@ -1,5 +1,6 @@
 import React from "react";
 import { Tab, Tabs, ListGroup, Badge } from "react-bootstrap";
+
 function LearnerCourseTabs() {
   return (
     <div>
@@ -50,7 +51,7 @@ function LearnerCourseTabs() {
           </ListGroup>
         </Tab>
         <Tab eventKey="CourseIncomp" title="Course In Progress">
-        <ListGroup as="ol" numbered>
+          <ListGroup as="ol" numbered>
             <ListGroup.Item
               as="li"
               className="d-flex justify-content-between align-items-start"
@@ -77,7 +78,6 @@ function LearnerCourseTabs() {
             </ListGroup.Item>
           </ListGroup>
         </Tab>
-        
       </Tabs>
     </div>
   );

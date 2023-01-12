@@ -28,19 +28,20 @@
 .Hcontainer > p {
   padding: 20px;
 }
-.Hfooter,.AFooter {
+.Hfooter,
+.AFooter {
   width: 100%;
   height: 300px;
   background-color: whitesmoke;
   margin-top: 10px;
   border-radius: 15px 15px 0 0;
 }
-.LFooter{
-    width: 100%;
-    height: 300px;
-    background-color: whitesmoke;
-    margin-top: 10px;
-    border-radius: 15px 15px 0 0;
+.LFooter {
+  width: 100%;
+  height: 300px;
+  background-color: whitesmoke;
+  margin-top: 10px;
+  border-radius: 15px 15px 0 0;
 }
 .PHcontainer {
   display: flex;
@@ -69,7 +70,8 @@
   width: auto;
   border-radius: 0%;
 }
-.authorCourseimage{
-    border-radius: 15px;
-height: 600px;
-box-shadow:  5px 5px 10px black;}
+.authorCourseimage {
+  border-radius: 15px;
+  height: 600px;
+  box-shadow: 5px 5px 10px black;
+}

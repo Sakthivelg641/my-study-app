@@ -1,6 +1,7 @@
 import React from "react";
-import { Form, Button, Tabs, Tab} from "react-bootstrap";
+import { Form, Button, Tabs, Tab } from "react-bootstrap";
 import { Link } from "react-router-dom";
+
 function Sign() {
   return (
     <div>
@@ -79,10 +80,11 @@ function Sign() {
                   Sign in
                 </Button>
               </Form>
-              
             </Tab>
           </Tabs>
-          <p>Already a user, <Link to="/login">Click here</Link> to login</p>
+          <p>
+            Already a user, <Link to="/login">Click here</Link> to login
+          </p>
         </div>
       </div>
     </div>

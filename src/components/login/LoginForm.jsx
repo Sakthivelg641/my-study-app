@@ -1,9 +1,10 @@
 import React from "react";
 import { Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+
 function LoginForm() {
   return (
-    <div >
+    <div>
       <div className="HloginformParent">
         <div className="Hloginform">
           <Form className="p-5">
@@ -21,9 +22,15 @@ function LoginForm() {
             <Button variant="primary" type="submit">
               Submit
             </Button>
-            <p>New here, <Link to="/sign">Click here</Link> to sign up</p>
-            <p><Link to="/learnerHomepage">Click here for learner</Link></p>
-            <p><Link to="/authorHomepage">Click here for author</Link></p>
+            <p>
+              New here, <Link to="/sign">Click here</Link> to sign up
+            </p>
+            <p>
+              <Link to="/learnerHomepage">Click here for learner</Link>
+            </p>
+            <p>
+              <Link to="/authorHomepage">Click here for author</Link>
+            </p>
           </Form>
         </div>
       </div>

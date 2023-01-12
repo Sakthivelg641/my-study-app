@@ -1,13 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function Hfooter() {
   return (
     <div>
-        <div className='Hfooter'>
-
-        </div>
+      <div className="Hfooter"></div>
     </div>
-  )
+  );
 }
 
-export default Hfooter
+export default Hfooter;

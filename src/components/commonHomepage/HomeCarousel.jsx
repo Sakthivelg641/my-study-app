@@ -1,5 +1,6 @@
 import React from "react";
-import { Button, Carousel, Card} from "react-bootstrap";
+import { Button, Carousel, Card } from "react-bootstrap";
+
 function Hcarousel() {
   return (
     <div>

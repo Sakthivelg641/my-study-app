@@ -1,9 +1,10 @@
-import React from 'react'
-import { Card, Carousel, Button } from 'react-bootstrap'
+import React from "react";
+import { Card, Carousel, Button } from "react-bootstrap";
+
 function LearnerCourseCarousel() {
   return (
     <div>
-        <Carousel className="mt-5 mx-5" variant="dark">
+      <Carousel className="mt-5 mx-5" variant="dark">
         <Carousel.Item>
           <div className="cards-wrapper">
             <Card>
@@ -183,7 +184,7 @@ function LearnerCourseCarousel() {
         </Carousel.Item>
       </Carousel>
     </div>
-  )
+  );
 }
 
-export default LearnerCourseCarousel
+export default LearnerCourseCarousel;
